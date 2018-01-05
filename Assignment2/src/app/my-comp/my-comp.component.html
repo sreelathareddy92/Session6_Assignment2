@@ -1,0 +1,13 @@
+<!-- <p>
+  my-comp works!
+</p> -->
+
+<!-- using local template variable #first,#last -->
+FirstName:<input type="text" name="firstName" [value]="firstName" #first/>
+LastName:<input type="text" name="lastName" [value]="lastName" #last/>
+<!-- invokes onSubmit() on click of button and passing local template values -->
+<button type="button" (click)="onSubmit(first.value,last.value)" >Submit</button>
+<br>
+<!-- display title on html page -->
+<h1>{{title}}</h1>
+
